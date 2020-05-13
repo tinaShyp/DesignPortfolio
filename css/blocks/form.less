@@ -1,0 +1,68 @@
+// main: ../style.less 
+
+.form__group {
+    margin-bottom: 27px;
+
+    @media @mobile {
+        margin-bottom: 20px;        
+    }  
+    @media @mobile-sm {
+        margin-bottom: 10px;        
+    }  
+}
+
+
+.form__label {
+    display: inline-block;
+    margin-bottom: 9px;
+
+    font-size: 13px;
+    color: @black;
+    font-weight: 700;
+
+    @media @mobile-sm {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+.form__textarea,
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 19px 27px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    border: 1px solid @gray-light;
+
+
+    border-radius: 27px;
+
+
+    &:focus {
+        outline: none;
+        border: 2px solid @gray;
+    }
+
+    @media @mobile-sm {
+        padding: 10px 15px;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+
+    @media @mobile {
+        height: 160px;
+    }
+    @media @mobile-sm {
+        height: 110px;
+    }
+}
