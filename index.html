@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--Header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="user">
+                <div class="user__avatar">
+                    <img src="https://lorempixel.com/57/57/3" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">Lewis <br> Nathaniel</div>
+                    <div class="user__prof">UI &amp; UX Designer</div>
+                </div>
+            </div>
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#work">WORK </a>
+                <a class="nav__link" href="#about">ABOUT ME</a>
+                <a class="nav__link" href="#news">BLOG</a>
+                <a class="nav__link" href="#footer">CONTACT</a>
+                <button class="btn btn--black"  data-modal="#modal_contact">Hire Me</button>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <img class="burger__icon" src="img/menu.svg" alt="">
+            </button>
+        </div>
+    </div><!--container-->
+</header>
+
+<!--Intro-->
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Hello, I'm</h2>
+                <h1 class="intro__title">Lewis Nathaniel</h1>
+                <div class="intro__text">UI &amp; UX Designer</div>
+
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <img src="img/Be.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#">
+                        <img src="img/Dribbble.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#">
+                        <img src="img/In.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#">
+                        <img src="img/Fb.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#">
+                        <img src="img/Instagram.png" alt="">
+                    </a>
+
+                    <a class="social__link" href="#">
+                        <img src="img/Twitter.png" alt="">
+                    </a>
+                </div>
+
+                <a class="btn btn--gray" href="#" data-modal="#modal_contact">Hire me</a>
+                <a class="btn btn--gray" href="#" data-modal="#modal_resume">See My Resume</a>
+
+            </div>
+            
+                <img class="intro__photo" src="img/designer_photo.png" alt="">
+            
+        </div><!--/intro__inner-->
+    </div>
+</div><!--/.intro-->
+
+
+
+<!--Works-->
+
+<div class="works" id="work">
+    <div class="container">
+
+<div class="works__nav">
+    <a href="#" class="works__nav-link" data-filter="all">All</a>
+    <a href="#" class="works__nav-link"  data-filter="app">App</a>
+    <a href="#" class="works__nav-link"  data-filter="website">Website</a>
+    <a href="#" class="works__nav-link"  data-filter="interaction">Interaction</a>    
+</div>
+
+<div class="portfolio" id="portfolio">
+
+    <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_1">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: app</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="interaction">
+        <div class="work" data-modal="#modal_project_2">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: interaction</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_1">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: website</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_2">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: app</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="interaction">
+        <div class="work" data-modal="#modal_project_1">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: interaction</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_2">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: website</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="interaction">
+        <div class="work" data-modal="#modal_project_1">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: interaction</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="app">
+        <div class="work" data-modal="#modal_project_2">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: app</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio__col" data-cat="website">
+        <div class="work" data-modal="#modal_project_1">
+            <img class="work__img" src="https://lorempixel.com/370/300" alt="">
+            <div class="work-content">
+                <div class="work__cat">Category: website</div>
+                <div class="work__title">
+                    Project title
+                    <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div> <!--/portfolio-->
+<div class="text-centr">
+<a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+</div>
+
+    </div> <!--/container-->
+</div><!--/works-->
+
+<!--About-->
+
+<section class="about" id="about">
+    <div class="container">
+
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="img/designer_photo2.png" alt="">
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">ABOUT ME</h3>
+                <h2 class="about__bigtitle">WHO AM I</h2>
+                <div class="about__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores expedita inventore nisi dolore, quam ipsum velit vitae? Ducimus magnam vel architecto eos quasi mollitia porro minima, dolore dolores soluta!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aperiam iusto excepturi in at minus sunt inventore voluptas architecto! Natus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus facere vel maxime officiis recusandae voluptatum doloremque sapiente necessitatibus possimus consequatur temporibus inventore, accusantium eos alias!Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus facere vel maxime officiis recusandae voluptatum doloremque sapiente necessitatibus possimus consequatur temporibus inventore, accusantium</p>
+                </div>
+
+                <a class="btn btn--gray" href="#"  data-modal="#modal_contact">HIRE ME</a>
+                <a class="btn btn--gray" href="#" data-modal="#modal_resume">SEE MY RESUME</a>
+            </div>
+        </div><!--about__inner-->
+        
+    </div><!--/container-->
+
+</section> <!--/About-->
+
+<!--Reviews-->
+
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat est consequat eu. Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum quis tempus dictum.</p>
+            </div>
+            <div class="reviews__autor">
+                <img class="reviews__photo" src="https://lorempixel.com/103/103" alt="">
+                <div class="reviews__name">Edward M. Brooks</div>
+                <div class="reviews__company">Marketing House</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="img/star.svg" width="13" height="13" alt="">
+                    <img class="reviews__star" src="img/half-star-shape.svg" width="13" height="13" alt="">
+                </div>
+            </div>
+        </div>
+        <!--/reviews__item-->
+
+    </div><!--/container-->
+</div>
+
+
+<!--News-->
+
+<section class="news" id="news">
+    <div class="container">
+
+        <div class="news__header">
+            <h3 class="news__title">READ ME</h3>
+            <div class="news__text">Sometimes i write something smart</div>
+        </div>
+
+        <div class="articles">
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br>june
+                        </time>
+                        <div class="articles__photo">
+                           <a href="#">
+                               <img class="img" src="https://lorempixel.com/370/260" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                                <a href="#">TEN THE BEST APP IN 2017
+                                </a>
+                                </h4>
+                        <div class="articles__cat">CATEGORY</div>
+                        <div class="articles__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p></div>
+                    </div>
+                    <a class="btn btn--sm" href="#">READ MORE</a>
+                </div>
+            </div>
+            
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            10<br>june
+                        </time>
+                        <div class="articles__photo">
+                           <a href="#">
+                               <img class="img" src="https://lorempixel.com/370/260" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                                <a href="#">WEBSITE INSPIRATION
+                                </a>
+                                </h4>
+                        <div class="articles__cat">CATEGORY</div>
+                        <div class="articles__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p></div>
+                    </div>
+                    <a class="btn btn--sm" href="#">READ MORE</a>
+                </div>
+            </div>
+            
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <time class="articles__date">
+                            20<br>june
+                        </time>
+                        <div class="articles__photo">
+                           <a href="#">
+                               <img class="img" src="https://lorempixel.com/370/260" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="articles__content">
+                        <h4 class="articles__title">
+                                <a href="#">CHANGES IN SOCIAL MEDIA
+                                </a>
+                                </h4>
+                        <div class="articles__cat">CATEGORY</div>
+                        <div class="articles__text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</p></div>
+                    </div>
+                    <a class="btn btn--sm" href="#">READ MORE</a>
+                </div>
+            </div>
+            
+        </div><!--/articles-->
+        <div class="news__footer">
+            <a class="news__link" href="#">See more post</a>
+        </div>
+    </div>
+</section><!--/News-->
+
+
+<!--Footer-->
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                    &copy; 2018 UI43 - Free Templates
+                </div>
+                <div class="footer__social">
+
+                    <a href="#" target="_blank">
+                        <img src="img/behance-logo.svg" alt="" width="24">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/dribbble-logo.svg" alt="" height="18">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/linkedin.svg" alt="" height="20">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/facebook-logo.svg" alt="" height="20">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/instagram-logo.svg" alt="" height="20">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/twitter.svg" alt="" height="20">
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <a href="#work" class="footer__nav-link">Work</a>
+                <a href="#about" class="footer__nav-link">About me</a>
+                <a href="#news" class="footer__nav-link">Blog</a>
+                <a href="#intro" class="footer__nav-link">Contact</a>
+                <a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_contact">HIRE ME</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Modals-->
+
+<div class="modal" id="modal_project_1">
+    <div class="modal__dialog">
+
+        
+
+         <div class="modal__work">
+             <div class="modal__wokr__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+             <div class="modal__work__content">
+                 <div class="modal__work__header">
+                    <h3 class="modal__work__title">Progect title</h3>
+                    <div class="modal__work__info">
+                        category <span class="modal__work__info__devider">|</span> 2018
+                    </div>
+                </div>
+
+                <div class="modal__work__client">
+                    <div class="client">Client</div>
+                    <div class="name">Creative Agency</div>
+                </div>
+
+                <div class="modal__work__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam consequatur iusto sapiente adipisci odit assumenda aperiam, illum necessitatibus eaque autem a neque. Quaerat ipsa magni voluptatibus recusandae totam voluptatem corporis dolores, aut nobis. Dignissimos, quaerat quibusdam dicta, nulla aliquam reiciendis inventore doloribus recusandae magni tempore eum, a harum accusamus.</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, itaque, molestias excepturi porro facere laudantium temporibus molestiae est blanditiis soluta optio recusandae possimus! Omnis, id?</p>
+                 </div>
+
+                <div class="modal__work__footer">
+                    <button class="modal__work__btn slickPrev" type="button">
+                        <img src="img/back.svg" alt="" height="11">
+                        Previous</button>
+                    <button class="modal__work__btn slickNext" type="button">Next
+                        <img src="img/next.svg" alt="" height="11">
+                    </button>
+                </div>
+
+             </div><!--modal-content-->
+         </div><!--modal__work-->
+
+      <button class="modal__close" type="button" data-close> 
+            <img src="img/modal-btn.svg" alt="close" width="34">
+        </button>
+
+    </div><!--modal__dialog-->
+</div><!--modal-->
+
+<div class="modal" id="modal_project_2">
+    <div class="modal__dialog">
+
+        
+
+         <div class="modal__work">
+             <div class="modal__wokr__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__wokr__photo" src="https://lorempixel.com/790/780" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+             <div class="modal__work__content">
+                 <div class="modal__work__header">
+                    <h3 class="modal__work__title">Progect title 2</h3>
+                    <div class="modal__work__info">
+                        category <span class="modal__work__info__devider">|</span> 2018
+                    </div>
+                </div>
+
+                <div class="modal__work__client">
+                    <div class="client">Client</div>
+                    <div class="name">Creative Agency</div>
+                </div>
+
+                <div class="modal__work__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam consequatur iusto sapiente adipisci odit assumenda aperiam, illum necessitatibus eaque autem a neque. Quaerat ipsa magni voluptatibus recusandae totam voluptatem corporis dolores, aut nobis. Dignissimos, quaerat quibusdam dicta, nulla aliquam reiciendis inventore doloribus recusandae magni tempore eum, a harum accusamus.</p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, itaque, molestias excepturi porro facere laudantium temporibus molestiae est blanditiis soluta optio recusandae possimus! Omnis, id?</p>
+                 </div>
+
+                <div class="modal__work__footer">
+                    <button class="modal__work__btn slickPrev" type="button">
+                        <img src="img/back.svg" alt="" height="11">
+                        Previous</button>
+                    <button class="modal__work__btn slickNext" type="button">Next
+                        <img src="img/next.svg" alt="" height="11">
+                    </button>
+                </div>
+
+             </div><!--modal-content-->
+         </div><!--modal__work-->
+
+      <button class="modal__close" type="button" data-close> 
+            <img src="img/modal-btn.svg" alt="close" width="34">
+        </button>
+
+    </div><!--modal__dialog-->
+</div><!--modal-->
+
+
+
+<div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+    
+            <button class="modal__close" type="button" data-close> 
+                <img src="img/modal-btn.svg" alt="close" width="34">
+            </button>
+     
+            <div class="modal__content">
+            <h2 class="modal__title text-centr">RESUME</h2>
+
+            <div class="text-centr">
+                <a class="btn btn--thin" href="#">Download PDF</a>
+                <a class="btn btn--thin" href="#">Print</a>
+             </div>
+
+            <div class="timeline">
+                <div class="timeline__col timeline__col--left">
+                    <h4 class="timeline__title">Experience</h4>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="21-11-2018">2017 - <b>Present</b></time>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__prof">Art Director</div>
+                        <div class="timeline__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat corporis nostrum tempora debitis ipsa, modi ratione velit necessitatibus natus sit? Eum possimus in consequuntur ab similique incidunt voluptas suscipit at velit?
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="21-11-2018">2016 - 2017</time>
+                        <h5 class="timeline__subtitle">Best Agency</h5>
+                        <div class="timeline__prof">Art Director</div>
+                        <div class="timeline__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat corporis nostrum tempora debitis ipsa, modi ratione velit necessitatibus natus sit? Eum possimus in consequuntur ab similique incidunt voluptas suscipit at velit?
+                        </div>
+                    </div>
+                    
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="21-11-2018">2014 - 2016</time>
+                        <h5 class="timeline__subtitle">Better Agency</h5>
+                        <div class="timeline__prof">Senior UI/UX Designer</div>
+                        <div class="timeline__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat corporis nostrum tempora debitis ipsa, modi ratione velit necessitatibus natus sit? Eum possimus in consequuntur ab similique incidunt voluptas suscipit at velit?
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="21-11-2018">2010 - 2014</time>
+                        <h5 class="timeline__subtitle">Better Agency</h5>
+                        <div class="timeline__prof">UI/UX Designer</div>
+                        <div class="timeline__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe adipisci neque provident voluptates nobis enim.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">Education</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="21-11-2018">2014 - 2016</time>
+                            <h5 class="timeline__subtitle">UI/UX Designer</h5>
+                            <div class="timeline__prof">LA University, USA</div>                            
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="21-11-2018">2014 - 2016</time>
+                            <h5 class="timeline__subtitle">UI/UX Designer</h5>
+                            <div class="timeline__prof">LA University, USA</div>                            
+                        </div>
+
+                        <h4 class="timeline__title">Skills</h4>
+
+
+                        <div class="progress__bar">
+
+                            <div class="progress__bar__item">
+                                <div class="progress__bar-left">
+                                    <div class="progerss__bar__title">UI/UX Design</div>
+                                </div>
+                                <div class="progress__bar-right">
+                                    <div class="progress__bar__bar">
+                                        <div class="progress__bar__progress" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress__bar__item">
+                                <div class="progress__bar-left">
+                                    <div class="progerss__bar__title">Illustrator</div>
+                                </div>
+                                <div class="progress__bar-right">
+                                    <div class="progress__bar__bar">
+                                        <div class="progress__bar__progress" style="width: 90%;"></div>
+                                    </div>
+                                </div>                        
+                            </div>
+
+                            <div class="progress__bar__item">
+                                <div class="progress__bar-left">
+                                   <div class="progerss__bar__title">Photoshop</div>
+                                </div>
+                                <div class="progress__bar-right">
+                                   <div class="progress__bar__bar">
+                                        <div class="progress__bar__progress" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress__bar__item">
+                             <div class="progress__bar-left">
+                                <div class="progerss__bar__title">Scetch</div>
+                            </div>
+                             <div class="progress__bar-right">
+                                <div class="progress__bar__bar">
+                                    <div class="progress__bar__progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!--/Progress__bar-->
+
+
+                    <h4 class="timeline__title">Awards</h4>
+                    <div class="timeline__item">                        
+                        <time class="timeline__date" datetime="21-11-2018">2016</time>
+                            <h5 class="timeline__subtitle">Best UI/UX Designer</h5>
+                            <div class="timeline__prof">LA University, USA</div>  
+                            <div class="timeline__text">
+                                    Lorem ipsum dolor ratione velit necessitatibus natus similique incidunt 
+                                </div>                          
+                    </div>
+
+                    <div class="timeline__item">                        
+                        <time class="timeline__date" datetime="21-11-2018">2015</time>
+                            <h5 class="timeline__subtitle">Best Web Design</h5>
+                            <div class="timeline__prof">NY University, USA</div>  
+                            <div class="timeline__text">
+                                    Lorem ipsum dolor sit idunt voluptas suscipit at velit
+                                </div>                          
+                    </div>
+                        
+                </div><!--//timeline__col--right-->
+            </div><!--/timeline-->
+
+            <div class="text-centr">
+                <a class="btn btn--thin" href="#" data-modal="#modal_contact">Hire Me</a>
+            </div>
+
+            </div><!--/modal-content-->
+    
+        </div><!--/modal__dialog-->
+    </div><!--modal-->
+
+
+    <div class="modal" id="modal_contact">
+        <div class="modal__dialog modal__dialog--sm">
+    
+            <button class="modal__close" type="button" data-close>
+                <img src="img/modal-btn.svg" alt="close" width="34">
+            </button>
+            
+            <div class="contact">
+                    <div class="contact__left">
+                        <h2 class="modal__title mb-0">Let's talk!</h2>
+                        <div class="modal__subtitle">Call me or send me a request</div>
+
+
+                        <ul class="contact__info">
+                            <li class="contact__info-item">
+                                <img class="contact__info-icon" src="img/telephone.svg" height="15" alt="">
+                                (200)100 30 30 
+                            </li>
+                            <li class="contact__info-item mb-0">
+                                <img class="contact__info-icon" src="img/envelope.svg" height="15" alt="">
+                                designer@ui.com
+                            </li>
+                        </ul>
+
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <label class="form__label" for="input-email">Adress e-mail</label>
+                                <input type="text" name="input-email" id="input-email" class="form__input" placeholder="Adress e-mail">
+                            </div>
+
+                            <div class="form__group">
+                                <label class="form__label" for="input-text">Request</label>
+                                <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                            </div>
+
+                            <div class="text-right">
+                                    <a class="btn btn--thin" href="#">Send</a>
+                                </div>
+                        </form>
+                    </div><!--/contact__left-->  
+                    <div class="contact__right">
+                        <img class="contact__right__img" src="https://lorempixel.com/480/700" alt="">
+                    </div>           
+                
+            </div><!--contact-->        
+        </div><!--modal__dialog-->
+    </div><!--modal-->
+<!--/Modals-->
+
+
+
+<!--JS-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+    
+</body>
+</html>
